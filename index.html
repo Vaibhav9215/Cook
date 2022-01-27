@@ -17,6 +17,7 @@
 		href="img/apple-touch-icon-114x114-precomposed.png">
 	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
 		href="img/apple-touch-icon-144x144-precomposed.png">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 	<!-- GOOGLE WEB FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
@@ -145,7 +146,7 @@ email
 				</div> -->
 				<!-- /content-left-wrapper -->
 			</div>
-			<div class="copy" style="color: #492270; text-align: center;">©  CookHike	<script>document.write(new Date().getFullYear())</script></div>
+			<div class="copy" style="color: #492270; text-align: center;">© CookHike	<script>document.write(new Date().getFullYear())</script></div>
 				</div>
 			
 			<!-- /content-left -->
@@ -309,7 +310,7 @@ email
 								</div>
 
 								<div class="form-group2">
-									<label for="locationType2" style="color: #492270;"><b>Types of dishes you Cook?*</b></label><br>
+									<label for="locationType2" style="color: #492270;margin-bottom: 0.5rem;"><b>Types of dishes you Cook?*</b></label><br>
 								
 									<select name="hours" id="starthour" required style="    border: none;">
 
@@ -326,6 +327,9 @@ email
 									<input type="radio" id="both" name="locateType2" value="both">
 									<label for="Both">Both</label> -->
 								</div>
+								<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, delectus dolorem illo accusantium necessitatibus est dolores perspiciatis reprehenderit doloremque? Ullam culpa laboriosam tempore vero quis maxime ipsum commodi unde voluptas, dicta natus ad aliquid minima id nulla dignissimos a eligendi repellat quae accusamus incidunt quo magni blanditiis sit! Alias temporibus nobis aliquid culpa officiis laborum, placeat sequi sint, possimus illo, mollitia consequuntur dolores sapiente iure autem rerum odit eius numquam magnam eum delectus. Dignissimos tempore assumenda distinctio possimus nesciunt, quaerat placeat voluptatem. Accusantium incidunt dolore molestias dolorum necessitatibus nisi amet asperiores, placeat earum rerum sint minima dolores quasi modi illo. -->
+
+								<!-- </p> -->
 								<br>
 
 
@@ -457,7 +461,7 @@ email
 
 								
 								<!-- drop down -->
-								<div>
+								<!-- <div>
 									<label for="working" style="color: #492270;margin-bottom: 0.5rem;"><b>What working hours suits you best to cook?*</b></label><br>
 									<label for="hours">Starting Hours&nbsp;&nbsp;</label>&nbsp;&nbsp;
 									<select name="hours" id="starthour" required style="    border: none;">
@@ -484,14 +488,14 @@ email
 										<option value="30">30</option>
 										<option value="45">45</option>
 
-									</select>&nbsp;&nbsp;
+									</select>&nbsp;&nbsp; -->
 
 									<!-- am pm -->
-									<select name="AM" id="starttime" required style="    border: none;">
+									<!-- <select name="AM" id="starttime" required style="    border: none;">
 										<option value="AM" selected>AM</option>
-										<option value="PM">PM</option>
+										<option value="PM">PM</option> -->
 										<!-- <option value="min">2</option> -->
-									</select> <br>
+									<!-- </select> <br>
 
 
 
@@ -522,18 +526,24 @@ email
 										<option value="30">30</option>
 										<option value="45">45</option>
 
-									</select>&nbsp;&nbsp;
+									</select>&nbsp;&nbsp; -->
 
 									<!-- am pm -->
-									<select name="Time2" id="closingtime" required style="    border: none;">
+									<!-- <select name="Time2" id="closingtime" required style="    border: none;">
 										<option value="AM">AM</option>
-										<option value="PM" selected>PM</option>
+										<option value="PM" selected>PM</option> -->
 										<!-- <option value="min">2</option> -->
-									</select>
+									<!-- </select>
 
 								</div>
-								<br>
-								<div>
+								<br> -->
+
+
+
+
+
+								<!-- /hghgjghj/ -->
+								<!-- <div>
 									<label for="day" style="color: #492270;margin-bottom: 0.5rem;"  ><b>The days, you would be available to cook?*</b></label><br>
 								
 									<div style="display: grid;grid-column: 2;grid-template-columns:  auto auto;">	
@@ -555,8 +565,654 @@ email
 									<label for="Saturday">Saturday</label> <br></div>
 								<div>	<input type="checkbox" id="cb1" name="day" value="Sunday">
 										<label for="Sunday">Sunday</label></div></div>
+									</div> -->
+
+
+									<div>
+										<label for="day" style="color: #492270;margin-bottom: 0.5rem;"><b>The days, you would be available to cook?*</b></label>
+									<div >	
+										<!-- //display: grid;grid-column: 2;grid-template-columns:  auto auto; -->
+										<div ><input type="checkbox" id="cb1" name="day" value="Monday"  onclick="ShowHideDiv(this)">
+										<label for="Monday" id="Monday">Monday</label> 
+									<div id="doc" style="display: none;">	<label for="working" style="color: #492270;">
+										<label for="hours">Starting Hours&nbsp;&nbsp;</label>&nbsp;&nbsp;
+										<select name="hours" id="starthour" required     style="    border: none;">
+	
+											<option value="0" required>0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9" selected>9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+										&nbsp;&nbsp;
+	
+										<select name="min" id="startmin" required style="    border: none;">
+											<option value="00" selected>00</option>
+											<option value="15">15</option>
+											<option value="30">30</option>
+											<option value="45">45</option>
+	
+										</select>&nbsp;&nbsp;
+	
+	
+										<!-- am pm -->
+										<select name="AM" id="starttime" required style="    border: none;">
+											<option value="AM" selected>AM</option>
+											<option value="PM">PM</option>
+											<!-- <option value="min">2</option> -->
+										</select> <br>
+	
+	
+	
+	
+										<label for="hours2">Closing&nbsp;
+											Hours&nbsp;&nbsp;
+										</label>&nbsp;&nbsp;
+	
+										<select name="hours2" id="closinghour" required style="    border: none;">
+	
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9" selected>9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+										&nbsp;&nbsp;
+	
+	
+										<select name="min2" id="closingmin" required style="    border: none;">
+											<option value="00" selected>00</option>
+											<option value="15">15</option>
+											<option value="30">30</option>
+											<option value="45">45</option>
+	
+										</select>&nbsp;&nbsp;
+	
+	
+										<!-- am pm -->
+										<select name="Time2" id="closingtime" required style="    border: none;">
+											<option value="AM">AM</option>
+											<option value="PM" selected>PM</option>
+											<!-- <option value="min">2</option> -->
+										</select>
+	
+									
+									</div> 
+								</div>
+									<script type="text/javascript">
+										// function getFilePath() {
+										// 	$('input[type=file]').change(function () {
+										// 		var filePath = $('#fileUpload').val();
+										// 	});
+										// }
+										
+										
+										function ShowHideDiv(cb1) {
+			var doc = document.getElementById("doc");
+			doc.style.display = cb1.checked ? "block" : "none";
+		}
+	
+										</script>
+										<div><input type="checkbox" id="cb1" name="day" value="Tuesday" onclick="ShowHideDiv1(this)">
+											<label for="Tuesday">Tuesday</label></div>
+											<div id="doc1" style="display: none;">	<label for="working" style="color: #492270;">
+												<label for="hours">Starting Hours&nbsp;&nbsp;</label>&nbsp;&nbsp;
+												<select name="hours" id="starthour" required     style="    border: none;">
+			
+													<option value="0" required>0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9" selected>9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+												</select>
+												&nbsp;&nbsp;
+			
+												<select name="min" id="startmin" required style="    border: none;">
+													<option value="00" selected>00</option>
+													<option value="15">15</option>
+													<option value="30">30</option>
+													<option value="45">45</option>
+			
+												</select>&nbsp;&nbsp;
+			
+			
+												<!-- am pm -->
+												<select name="AM" id="starttime" required style="    border: none;">
+													<option value="AM" selected>AM</option>
+													<option value="PM">PM</option>
+													<!-- <option value="min">2</option> -->
+												</select> <br>
+			
+			
+			
+			
+												<label for="hours2">Closing&nbsp;
+													Hours&nbsp;&nbsp;
+												</label>&nbsp;&nbsp;
+			
+												<select name="hours2" id="closinghour" required style="    border: none;">
+			
+													<option value="0">0</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9" selected>9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+												</select>
+												&nbsp;&nbsp;
+			
+			
+												<select name="min2" id="closingmin" required style="    border: none;">
+													<option value="00" selected>00</option>
+													<option value="15">15</option>
+													<option value="30">30</option>
+													<option value="45">45</option>
+			
+												</select>&nbsp;&nbsp;
+			
+			
+												<!-- am pm -->
+												<select name="Time2" id="closingtime" required style="    border: none;">
+													<option value="AM">AM</option>
+													<option value="PM" selected>PM</option>
+													<!-- <option value="min">2</option> -->
+												</select>
+			
+											
+	
+											</div> 
+											<script type="text/javascript">
+												// function getFilePath() {
+												// 	$('input[type=file]').change(function () {
+												// 		var filePath = $('#fileUpload').val();
+												// 	});
+												// }
+			
+												function ShowHideDiv1(cb1) {
+					var doc1 = document.getElementById("doc1");
+					doc1.style.display = cb1.checked ? "block" : "none";
+				}
+			
+												</script>
+										<div><input type="checkbox" id="cb1" name="day" value="Wednesday" onclick="ShowHideDiv2(this)">
+										<label for="Wednesday">Wednesday</label> </div>
+	<div><div id="doc2" style="display: none;">	<label for="working" style="color: #492270;">
+		<label for="hours">Starting Hours&nbsp;&nbsp;</label>&nbsp;&nbsp;
+		<select name="hours" id="starthour" required     style="    border: none;">
+	
+			<option value="0" required>0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9" selected>9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</select>
+		&nbsp;&nbsp;
+	
+		<select name="min" id="startmin" required style="    border: none;">
+			<option value="00" selected>00</option>
+			<option value="15">15</option>
+			<option value="30">30</option>
+			<option value="45">45</option>
+	
+		</select>&nbsp;&nbsp;
+	
+	
+		<!-- am pm -->
+		<select name="AM" id="starttime" required style="    border: none;">
+			<option value="AM" selected>AM</option>
+			<option value="PM">PM</option>
+			<!-- <option value="min">2</option> -->
+		</select> <br>
+	
+	
+	
+	
+		<label for="hours2">Closing&nbsp;
+			Hours&nbsp;&nbsp;
+		</label>&nbsp;&nbsp;
+	
+		<select name="hours2" id="closinghour" required style="    border: none;">
+	
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9" selected>9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</select>
+		&nbsp;&nbsp;
+	
+	
+		<select name="min2" id="closingmin" required style="    border: none;">
+			<option value="00" selected>00</option>
+			<option value="15">15</option>
+			<option value="30">30</option>
+			<option value="45">45</option>
+	
+		</select>&nbsp;&nbsp;
+	
+	
+		<!-- am pm -->
+		<select name="Time2" id="closingtime" required style="    border: none;">
+			<option value="AM">AM</option>
+			<option value="PM" selected>PM</option>
+			<!-- <option value="min">2</option> -->
+		</select>
+	
+		<script type="text/javascript">
+			
+			function ShowHideDiv2(cb1) {
+	var doc2 = document.getElementById("doc2");
+	doc2.style.display = cb1.checked ? "block" : "none";
+			}</script>
+	</div> 
+										<input type="checkbox" id="cb1" name="day" value="Thursday" onclick="ShowHideDiv3(this)">
+									
+									<label for="Thursday">Thursday</label> </div><div id="doc3" style="display: none;" >	<label for="working" style="color: #492270;">
+										<label for="hours">Starting Hours&nbsp;&nbsp;</label>&nbsp;&nbsp;
+										<select name="hours" id="starthour" required     style="    border: none;">
+	
+											<option value="0" required>0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9" selected>9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+										&nbsp;&nbsp;
+	
+										<select name="min" id="startmin" required style="    border: none;">
+											<option value="00" selected>00</option>
+											<option value="15">15</option>
+											<option value="30">30</option>
+											<option value="45">45</option>
+	
+										</select>&nbsp;&nbsp;
+	
+	
+										<!-- am pm -->
+										<select name="AM" id="starttime" required style="    border: none;">
+											<option value="AM" selected>AM</option>
+											<option value="PM">PM</option>
+											<!-- <option value="min">2</option> -->
+										</select> <br>
+	
+	
+	
+	
+										<label for="hours2">Closing&nbsp;
+											Hours&nbsp;&nbsp;
+										</label>&nbsp;&nbsp;
+	
+										<select name="hours2" id="closinghour" required style="    border: none;">
+	
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9" selected>9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+										&nbsp;&nbsp;
+	
+	
+										<select name="min2" id="closingmin" required style="    border: none;">
+											<option value="00" selected>00</option>
+											<option value="15">15</option>
+											<option value="30">30</option>
+											<option value="45">45</option>
+	
+										</select>&nbsp;&nbsp;
+	
+	
+										<!-- am pm -->
+										<select name="Time2" id="closingtime" required style="    border: none;">
+											<option value="AM">AM</option>
+											<option value="PM" selected>PM</option>
+											<!-- <option value="min">2</option> -->
+										</select>
+										<script type="text/javascript">
+			
+											function ShowHideDiv3(cb1) {
+									var doc3 = document.getElementById("doc3");
+									doc3.style.display = cb1.checked ? "block" : "none";
+											}</script>
+									
+									</div> 
+									<div>		<input type="checkbox" id="cb1" name="day" value="Friday" onclick="ShowHideDiv4(this)">
+									
+									<label for="Friday">Friday</label></div><div id="doc4" style="display: none;">	<label for="working" style="color: #492270;">
+										<label for="hours">Starting Hours&nbsp;&nbsp;</label>&nbsp;&nbsp;
+										<select name="hours" id="starthour" required     style="    border: none;">
+	
+											<option value="0" required>0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9" selected>9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+										&nbsp;&nbsp;
+	
+										<select name="min" id="startmin" required style="    border: none;">
+											<option value="00" selected>00</option>
+											<option value="15">15</option>
+											<option value="30">30</option>
+											<option value="45">45</option>
+	
+										</select>&nbsp;&nbsp;
+	
+	
+										<!-- am pm -->
+										<select name="AM" id="starttime" required style="    border: none;">
+											<option value="AM" selected>AM</option>
+											<option value="PM">PM</option>
+											<!-- <option value="min">2</option> -->
+										</select> <br>
+	
+	
+	
+	
+										<label for="hours2">Closing&nbsp;
+											Hours&nbsp;&nbsp;
+										</label>&nbsp;&nbsp;
+	
+										<select name="hours2" id="closinghour" required style="    border: none;">
+	
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9" selected>9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+										&nbsp;&nbsp;
+	
+	
+										<select name="min2" id="closingmin" required style="    border: none;">
+											<option value="00" selected>00</option>
+											<option value="15">15</option>
+											<option value="30">30</option>
+											<option value="45">45</option>
+	
+										</select>&nbsp;&nbsp;
+	
+	
+										<!-- am pm -->
+										<select name="Time2" id="closingtime" required style="    border: none;">
+											<option value="AM">AM</option>
+											<option value="PM" selected>PM</option>
+											<!-- <option value="min">2</option> -->
+										</select>
+										<script type="text/javascript">
+			
+											function ShowHideDiv4(cb1) {
+									var doc4 = document.getElementById("doc4");
+									doc4.style.display = cb1.checked ? "block" : "none";
+											}</script>
+									
+									
+									</div> 
+								<div>	<input type="checkbox" id="cb1" name="day" value="Saturday" onclick="ShowHideDiv5(this)"> 
+									<label for="Saturday">Saturday</label> <br></div><div id="doc5" style="display: none;">	<label for="working" style="color: #492270;">
+										<label for="hours">Starting Hours&nbsp;&nbsp;</label>&nbsp;&nbsp;
+										<select name="hours" id="starthour" required     style="    border: none;">
+	
+											<option value="0" required>0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9" selected>9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+										&nbsp;&nbsp;
+	
+										<select name="min" id="startmin" required style="    border: none;">
+											<option value="00" selected>00</option>
+											<option value="15">15</option>
+											<option value="30">30</option>
+											<option value="45">45</option>
+	
+										</select>&nbsp;&nbsp;
+	
+	
+										<!-- am pm -->
+										<select name="AM" id="starttime" required style="    border: none;">
+											<option value="AM" selected>AM</option>
+											<option value="PM">PM</option>
+											<!-- <option value="min">2</option> -->
+										</select> <br>
+	
+	
+	
+	
+										<label for="hours2">Closing&nbsp;
+											Hours&nbsp;&nbsp;
+										</label>&nbsp;&nbsp;
+	
+										<select name="hours2" id="closinghour" required style="    border: none;">
+	
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9" selected>9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+										&nbsp;&nbsp;
+	
+	
+										<select name="min2" id="closingmin" required style="    border: none;">
+											<option value="00" selected>00</option>
+											<option value="15">15</option>
+											<option value="30">30</option>
+											<option value="45">45</option>
+	
+										</select>&nbsp;&nbsp;
+	
+	
+										<!-- am pm -->
+										<select name="Time2" id="closingtime" required style="    border: none;">
+											<option value="AM">AM</option>
+											<option value="PM" selected>PM</option>
+											<!-- <option value="min">2</option> -->
+										</select>
+										<script type="text/javascript">
+			
+											function ShowHideDiv5(cb1) {
+									var doc5 = document.getElementById("doc5");
+									doc5.style.display = cb1.checked ? "block" : "none";
+											}</script>
+									
+									
+									</div> 
+								<div>	<input type="checkbox" id="cb1" name="day" value="Sunday" onclick="ShowHideDiv6(this)">
+										<label for="Sunday">Sunday</label></div></div><div id="doc6" style="display: none;">	<label for="working" style="color: #492270;">
+											<label for="hours">Starting Hours&nbsp;&nbsp;</label>&nbsp;&nbsp;
+											<select name="hours" id="starthour" required     style="    border: none;">
+		
+												<option value="0" required>0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9" selected>9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+											</select>
+											&nbsp;&nbsp;
+		
+											<select name="min" id="startmin" required style="    border: none;">
+												<option value="00" selected>00</option>
+												<option value="15">15</option>
+												<option value="30">30</option>
+												<option value="45">45</option>
+		
+											</select>&nbsp;&nbsp;
+		
+		
+											<!-- am pm -->
+											<select name="AM" id="starttime" required style="    border: none;">
+												<option value="AM" selected>AM</option>
+												<option value="PM">PM</option>
+												<!-- <option value="min">2</option> -->
+											</select> <br>
+		
+		
+		
+		
+											<label for="hours2">Closing&nbsp;
+												Hours&nbsp;&nbsp;
+											</label>&nbsp;&nbsp;
+		
+											<select name="hours2" id="closinghour" required style="    border: none;">
+		
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9" selected>9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+											</select>
+											&nbsp;&nbsp;
+		
+		
+											<select name="min2" id="closingmin" required style="    border: none;">
+												<option value="00" selected>00</option>
+												<option value="15">15</option>
+												<option value="30">30</option>
+												<option value="45">45</option>
+		
+											</select>&nbsp;&nbsp;
+		
+		
+											<!-- am pm -->
+											<select name="Time2" id="closingtime" required style="    border: none;">
+												<option value="AM">AM</option>
+												<option value="PM" selected>PM</option>
+												<!-- <option value="min">2</option> -->
+											</select>
+											<script type="text/javascript">
+			
+												function ShowHideDiv6(cb1) {
+										var doc6 = document.getElementById("doc6");
+										doc6.style.display = cb1.checked ? "block" : "none";
+												}</script>
+										
+										</div> 
 									</div>
 									<br>
+									<script>
+										function getFilePath() {
+													$('input[type=file]').change(function () {
+														var filePath = $('#fileUpload').val();
+													});
+												}
+									</script>
+
+
+
+									
 								<div class="form-group4">
 									<label for="locationType" style="color: #492270;margin-bottom: 0.5rem;"><b>Are you interested to do party / bulk
 											orders?*</b></label></label><br>
@@ -580,7 +1236,9 @@ email
 			margin-top: 550px !important;
 		}
 									
-									
+								body{
+									font-family: Montserrat;
+								}	
 									.onoffswitch1 {
 										position: relative; 
 										width: 155px;
@@ -970,11 +1628,13 @@ window.onload = function() {
 							 window.location.href = "thankyou.html";
 								 }
 							};</script> -->
-						<script type="text/javascript">
+						<script defer type="module">
+							
 								document.getElementById("submitId").onclick = function () {
 									window.location.href = "thankyou.html";
         // }
       };
+	 
     </script>
 
 						<!-- /bottom-wizard -->
@@ -990,21 +1650,21 @@ window.onload = function() {
 
 	<!-- </script> -->
 
-	<div class="cd-overlay-nav">
+	<!-- <div class="cd-overlay-nav">
 		<span></span>
-	</div>
+	</div> -->
 	<!-- /cd-overlay-nav -->
 
-	<div class="cd-overlay-content">
+	<!-- <div class="cd-overlay-content">
 		<span></span>
-	</div>
+	</div> -->
 	<!-- /cd-overlay-content -->
 
 	<!-- <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a> -->
 	<!-- /menu button -->
 
 	<!-- Modal terms -->
-	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+	<!-- <div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -1027,11 +1687,11 @@ window.onload = function() {
 				<div class="modal-footer">
 					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
 				</div>
-			</div>
+			</div> -->
 			<!-- /.modal-content -->
-		</div>
+		<!-- </div> -->
 		<!-- /.modal-dialog -->
-	</div>
+	<!-- </div> -->
 	<!-- /.modal -->
 
 	<!-- COMMON SCRIPTS -->
@@ -1048,5 +1708,16 @@ window.onload = function() {
 	<script src="js/storage.js"></script>
 
 </body>
+<script defer type="module">
+	 const removeDisplay = ()=> { var step= document.querySelector(".step.wizard-step")
+	 									step.removeAttribute("style");
+	  									// step.setAttribute("style", "display:block !important;");
+										console.log("step = ", step);
+										step.setAttribute("class", "step wizard-step block")
+										step.setAttribute("style", "display:block !important;")
+									}
+	  window.addEventListener("load", removeDisplay);
+	 //var step2= document.querySelector(".step.wizard-step").removeAttribute("style")
+</script>
 
 </html>

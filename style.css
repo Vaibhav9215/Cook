@@ -370,6 +370,9 @@ a.btn_1.full-width,
 		/* padding: 20px; */
 	/* transition: font-size 0.2s ease;
 } */
+.block {
+  display: block !important;
+}
 
 .card {
 		background-color:whitesmoke;
